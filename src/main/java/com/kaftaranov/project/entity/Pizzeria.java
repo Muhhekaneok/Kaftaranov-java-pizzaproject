@@ -29,7 +29,7 @@ public class Pizzeria {
     boolean aroundTheClock;
     boolean cardPayment;
     @Min(value = 1, message = "Rating cannot be less than 1")
-    @Max(value = 5, message = "Price cannot be more than 5")
+    @Max(value = 5, message = "Rating cannot be more than 5")
     int rating;
     @OneToMany
     List<Pizza> pizzas;

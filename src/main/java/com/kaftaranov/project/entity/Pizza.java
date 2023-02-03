@@ -17,7 +17,6 @@ public class Pizza {
     String id;
     String name;
     double price;
-    List<String> ingredients;
     boolean novelty;
     boolean vegan;
     @ManyToOne
