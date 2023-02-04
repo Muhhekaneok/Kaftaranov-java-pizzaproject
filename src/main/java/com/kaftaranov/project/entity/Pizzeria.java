@@ -31,6 +31,6 @@ public class Pizzeria {
     @Min(value = 1, message = "Rating cannot be less than 1")
     @Max(value = 5, message = "Rating cannot be more than 5")
     int rating;
-    @OneToMany
+    @OneToMany(mappedBy = "pizzeria")
     List<Pizza> pizzas;
 }

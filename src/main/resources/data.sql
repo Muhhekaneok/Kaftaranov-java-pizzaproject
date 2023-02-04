@@ -58,6 +58,9 @@ insert into pizza (id, name, price, novelty, vegan, pizzeria_id)
 insert into pizza (id, name, price, novelty, vegan, pizzeria_id)
     values ('8731bf22-1a3e-43bd-acb5-e6449c3fe384', 'Carne mista', 11, false, false, 'cd6a9cff-9e83-4438-aaea-81b98c79e9c7');
 
+
+insert into ingredients (id, composition, pizza_id)
+    values ('951e7977-ed5c-4033-adc8-063e99db01a0', 'Tomato, garlic, oregano, basil', '325979eb-9938-4c9d-9109-a6aa43e92cd6');
 -- -----------------------------------------------------------------------------------------------------------------------------
 -- customer
 --insert into customer (id, name, phoneNumber, review, pizzeria_id, pizza_id)

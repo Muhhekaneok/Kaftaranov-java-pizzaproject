@@ -21,4 +21,9 @@ public class Pizza {
     boolean vegan;
     @ManyToOne
     Pizzeria pizzeria;
+    @ManyToMany
+    @JoinTable(name = "pizza_ingredients",
+            joinColumns = @JoinColumn(name = "pizza_id"),
+            inverseJoinColumns = @JoinColumn(name = "ingredients_id"))
+    List<Ingredients> ingredients;
 }
