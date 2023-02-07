@@ -58,9 +58,57 @@ insert into pizza (id, name, price, novelty, vegan, pizzeria_id)
 insert into pizza (id, name, price, novelty, vegan, pizzeria_id)
     values ('8731bf22-1a3e-43bd-acb5-e6449c3fe384', 'Carne mista', 11, false, false, 'cd6a9cff-9e83-4438-aaea-81b98c79e9c7');
 
-
-insert into ingredients (id, composition, pizza_id)
-    values ('951e7977-ed5c-4033-adc8-063e99db01a0', 'Tomato, garlic, oregano, basil', '325979eb-9938-4c9d-9109-a6aa43e92cd6');
+insert into ingredients (id, name) values ('0de91c24-c35a-4e11-8212-b54d1ce0669d', 'tomato');
+insert into ingredients (id, name) values ('96769f1d-6361-44dc-a34f-5f091afbc507', 'garlic');
+insert into ingredients (id, name) values ('c7eb3020-f7c3-4046-a2a5-818b5476803e', 'oregano');
+insert into ingredients (id, name) values ('b00956b0-e19c-4327-b84b-51a66b06d84c', 'basil');
+insert into ingredients (id, name) values ('3177e923-215d-44b4-a79c-fd09225c8a33', 'mozzarella');
+insert into ingredients (id, name) values ('b1932714-185a-4b05-a2b7-1a6c67bc1668', 'buffalo mozzarella');
+insert into ingredients (id, name) values ('18b1553d-6a17-4ef3-b02c-4e6a347b3ed4', 'salamino piccante');
+insert into ingredients (id, name) values ('b9364753-ef08-4d95-bbb9-c1d9d60190d8', 'chilli');
+insert into ingredients (id, name) values ('00d14a16-c9f1-4434-97c2-8c9b0d49b178', 'ham');
+insert into ingredients (id, name) values ('c94c1764-94e4-4457-9f0d-9c0f2a630d62', 'salame Napoli');
+insert into ingredients (id, name) values ('aa0dc2ed-6308-495b-b0ca-9560ab29cf4e', 'mushrooms');
+insert into ingredients (id, name) values ('c684846e-9fea-408a-899d-baeb201fcb5d', 'grilled artichokes');
+insert into ingredients (id, name) values ('e03a2626-9b1f-4395-a6d7-041df6a2341d', 'nduja (spicy minced pork)');
+insert into ingredients (id, name) values ('19d52d96-bf96-41be-89f0-41ba849917da', 'salamino piccante (spicy salami)');
+insert into ingredients (id, name) values ('3d683f20-59ad-4302-b989-47c86c964f35', 'roasted peppers');
+insert into ingredients (id, name) values ('0164f722-3679-428f-b89c-282ddcac2201', 'anchovies');
+insert into ingredients (id, name) values ('7eb9830a-3eb1-4e68-a4be-6c84b90a18ae', 'capers');
+insert into ingredients (id, name) values ('86f7ce89-e7df-488e-b227-f5481ef95dff', 'taleggio');
+insert into ingredients (id, name) values ('684334c3-f510-4695-92ba-9fa71674e0a8', 'gorgonzola');
+insert into ingredients (id, name) values ('659cc506-303d-4644-a0f7-c03858781cad', 'smoked provola');
+insert into ingredients (id, name) values ('4a47c51a-adc2-4ca9-8228-66d26342c62f', 'cherry tomato');
+insert into ingredients (id, name) values ('40a6f21e-3d67-4789-a4a4-8d94f7fc88cf', 'chorizo');
+insert into ingredients (id, name) values ('4a336dff-f36b-4245-a242-acb57ad97d23', 'chilli flake’s');
+insert into ingredients (id, name) values ('fe1eb16a-f19a-47fe-8eba-a9a5e1e218c8', 'chicken');
+insert into ingredients (id, name) values ('f2c3179b-0e07-4317-90cd-3641bb57dfe7', 'italian beef sausage');
+insert into ingredients (id, name) values ('56524baf-253d-4bd7-80dc-ea6a21744a77', 'broccoli');
+insert into ingredients (id, name) values ('42bdefe1-fbb5-47e7-a74e-17619aa96a8b', 'sundried tomato');
+insert into ingredients (id, name) values ('6964aa44-4de6-404e-bf01-391c651d88a7', 'red onions');
+insert into ingredients (id, name) values ('8cf05bb8-49e4-487e-a086-eb94cdd775ce', 'truffle cream sauce base');
+insert into ingredients (id, name) values ('98d9c351-3e1b-477a-b73a-d6a09c165e06', 'spinach');
+insert into ingredients (id, name) values ('8842426f-0ba9-46b3-8f6e-d0abc333d15f', 'ricotta sauce base');
+insert into ingredients (id, name) values ('3bbabff3-464b-4b18-a4c1-d5cdfd26c034', 'kalamata olives');
+insert into ingredients (id, name) values ('6719234a-84b7-45ec-a52f-e4856ad25cef', 'toasted pine nuts');
+insert into ingredients (id, name) values ('60bab33d-f5ec-4494-9b30-facc0a805e92', 'Beef bresaola');
+insert into ingredients (id, name) values ('24b8612d-068e-4970-9d75-ef2898792e35', 'balsamic fig reduction');
+insert into ingredients (id, name) values ('bba58f94-c5a5-4a30-a2ad-f9400278b045', 'rocket leaf');
+insert into ingredients (id, name) values ('197b5ebe-21bd-4a36-8124-2dff4050ab82', 'aubergine');
+insert into ingredients (id, name) values ('a64ac330-53d2-4f39-9826-e7dbe2f16767', 'beef pepperoni');
+insert into ingredients (id, name) values ('f6dfd96f-6448-452f-ac69-25c80cdcc3dd', 'jalapenos');
+insert into ingredients (id, name) values ('559ed45d-1abb-49b2-9866-90baf53d56f3', 'garlic oil');
+insert into ingredients (id, name) values ('cc3cb518-d7a1-49dd-b0f0-66c21f50301f', 'spicy beef sausage');
+insert into ingredients (id, name) values ('bd279582-3b26-4ace-9586-1b2c75316c6f', 'green peppers');
+insert into ingredients (id, name) values ('50b32fd6-47d5-4edc-8f1b-b57d1df743ae', 'fior di latte');
+insert into ingredients (id, name) values ('76ec6d4f-c083-4303-8acf-d45ac1fadefe', 'harissa hot sauce');
+insert into ingredients (id, name) values ('8c10ced9-0397-4b89-a693-40c00577d524', 'roast lamb');
+insert into ingredients (id, name) values ('fe564543-aafc-4165-a2a4-6e60db29533d', 'feta');
+insert into ingredients (id, name) values ('061e6cad-830e-460e-a0d7-23ec3b04fc33', 'pomegranate');
+insert into ingredients (id, name) values ('ee8560de-a5d0-4aaf-8f64-d6b796338af9', 'tzatziki yoghurt');
+insert into ingredients (id, name) values ('13592100-1917-435e-9abc-be4af3a33d78', 'bresaola');
+--insert into ingredients (id, composition, pizza_id)
+--    values ('951e7977-ed5c-4033-adc8-063e99db01a0', 'Tomato, garlic, oregano, basil', '325979eb-9938-4c9d-9109-a6aa43e92cd6');
 -- -----------------------------------------------------------------------------------------------------------------------------
 -- customer
 --insert into customer (id, name, phoneNumber, review, pizzeria_id, pizza_id)

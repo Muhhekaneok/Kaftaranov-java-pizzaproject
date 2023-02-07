@@ -1,16 +1,20 @@
 package com.kaftaranov.project.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.util.List;
-
+@Entity
+@Data
+@NoArgsConstructor
 public class Ingredients {
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name = "system-uuid", strategy = "uuid")
     String id;
-    String composition; // ???
+    String name;
     @ManyToMany
     @JoinTable(name = "pizza_ingredients",
             joinColumns = @JoinColumn(name = "ingredients_id"),
@@ -18,7 +22,7 @@ public class Ingredients {
     List<Pizza> pizzas;
 }
 
-// В каждой пиццерии свои список ингридиентов. Это реально существующие пиццерии с разных городов и их настоящие пиццы.
+
 /*
 FATTO A MANO - пиццерия
  --пицца--  -  --состав пиццы--
