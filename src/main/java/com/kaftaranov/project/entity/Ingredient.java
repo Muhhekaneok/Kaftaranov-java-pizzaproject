@@ -9,17 +9,17 @@ import java.util.List;
 @Entity
 @Data
 @NoArgsConstructor
-public class Ingredients {
+public class Ingredient {
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name = "system-uuid", strategy = "uuid")
-    String id;
-    String name;
+    private String id;
+    private String name;
     @ManyToMany
-    @JoinTable(name = "pizza_ingredients",
-            joinColumns = @JoinColumn(name = "ingredients_id"),
+    @JoinTable(name = "pizza_ingredient",
+            joinColumns = @JoinColumn(name = "ingredient_id"),
             inverseJoinColumns = @JoinColumn(name = "pizza_id"))
-    List<Pizza> pizzas;
+    private List<Pizza> pizzas;
 }
 
 

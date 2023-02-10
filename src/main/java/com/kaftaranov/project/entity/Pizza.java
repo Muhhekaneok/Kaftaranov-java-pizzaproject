@@ -1,5 +1,6 @@
 package com.kaftaranov.project.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,16 +15,17 @@ public class Pizza {
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name = "system-uuid", strategy = "uuid")
-    String id;
-    String name;
-    double price;
-    boolean novelty;
-    boolean vegan;
+    private String id;
+    private String name;
+    private double price;
+    private boolean novelty;
+    private boolean vegan;
     @ManyToOne
-    Pizzeria pizzeria;
+    private Pizzeria pizzeria;
     @ManyToMany
-    @JoinTable(name = "pizza_ingredients",
+    @JoinTable(name = "pizza_ingredient",
             joinColumns = @JoinColumn(name = "pizza_id"),
-            inverseJoinColumns = @JoinColumn(name = "ingredients_id"))
-    List<Ingredients> ingredients;
+            inverseJoinColumns = @JoinColumn(name = "ingredient_id"))
+    @JsonIgnore
+    private List<Ingredient> ingredients;
 }
