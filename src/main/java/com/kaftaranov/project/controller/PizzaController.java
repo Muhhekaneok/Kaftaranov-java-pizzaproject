@@ -70,7 +70,7 @@ public class PizzaController {
     }
 
     @GetMapping("/editPizza/{id}")
-    public String editPizzaById(@PathVariable String id, Model model) {
+    public String editPizza(@PathVariable String id, Model model) {
         Pizza pizza = pizzaService.getPizzaById(id);
         model.addAttribute("pizza", pizza);
         model.addAttribute("pizzerias", pizzeriaService.getAllPizzerias());
@@ -78,7 +78,7 @@ public class PizzaController {
     }
 
     @GetMapping("/deletePizza/{id}")
-    public String deletePizzaById(@PathVariable String id, Model model) {
+    public String deletePizza(@PathVariable String id, Model model) {
         pizzaService.deletePizzaById(id);
         model.addAttribute("pizzas", pizzaService.getAllPizzas());
         return "redirect:/pizzas";

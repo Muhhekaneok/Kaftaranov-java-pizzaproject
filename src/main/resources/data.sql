@@ -1,8 +1,8 @@
-insert into pizzeria (id, name, city, address, site, phone, delivery, around_the_clock, card_payment, rating)
+insert into pizzeria (id, name, city, address, site, phone, is_delivery, is_around_the_clock, is_card_payment, rating)
     values ('78857ae2-22d4-4725-b27d-c3c9943a5aab', 'FATTO A MANO', 'Brighton', '65-67 Church Road', 'http://www.fattoamanopizza.com', '+441273325400', true, false, true, 4);
-insert into pizzeria (id, name, city, address, site, phone, delivery, around_the_clock, card_payment, rating)
+insert into pizzeria (id, name, city, address, site, phone, is_delivery, is_around_the_clock, is_card_payment, rating)
     values ('6c6c9568-208f-4dab-b3e8-92ef320248c1', 'LOST SOULS PIZZA', 'London', '245 Eversholt St', 'https://lostsoulspizza.com', '+442073882101', true, true, true, 4);
-insert into pizzeria (id, name, city, address, site, phone, delivery, around_the_clock, card_payment, rating)
+insert into pizzeria (id, name, city, address, site, phone, is_delivery, is_around_the_clock, is_card_payment, rating)
     values ('cd6a9cff-9e83-4438-aaea-81b98c79e9c7', 'NUDO', 'London', '70 High Rd, East Finchley', 'https://nudopizza.co.uk', '+442081944415', true, false, true, 5);
 
 insert into pizza (id, name, price, novelty, vegan, pizzeria_id)

@@ -43,14 +43,14 @@ public class PizzeriaController {
     }
 
     @GetMapping("/editPizzeria/{id}")
-    public String editPizzeriaById(@PathVariable String id, Model model) {
+    public String editPizzeria(@PathVariable String id, Model model) {
         Pizzeria pizzeria = pizzeriaService.getPizzeriaById(id);
         model.addAttribute("pizzeria", pizzeria);
         return "pizzeria";
     }
 
     @GetMapping("/deletePizzeria/{id}")
-    public String deletePizzeriaById(@PathVariable String id, Model model) {
+    public String deletePizzeria(@PathVariable String id, Model model) {
         pizzeriaService.deletePizzeriaById(id);
         model.addAttribute("pizzeria", pizzeriaService.getAllPizzerias());
         return "redirect:/pizzerias";

@@ -1,5 +1,6 @@
 package com.kaftaranov.project.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,6 +20,7 @@ public class Ingredient {
     @JoinTable(name = "pizza_ingredient",
             joinColumns = @JoinColumn(name = "ingredient_id"),
             inverseJoinColumns = @JoinColumn(name = "pizza_id"))
+    @JsonIgnore
     private List<Pizza> pizzas;
 }
 
