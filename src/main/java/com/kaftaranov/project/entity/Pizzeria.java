@@ -2,15 +2,12 @@ package com.kaftaranov.project.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
 
 import java.util.List;
 
@@ -47,5 +44,6 @@ public class Pizzeria {
 //    http://localhost:8080/api/pizzerias похоже выпадал бесконечный список самой первой пицерии.
 //    В итоге, помогла аннтоация @JsonIgnore
     @JsonIgnore
+    @ToString.Exclude
     private List<Pizza> pizzas;
 }

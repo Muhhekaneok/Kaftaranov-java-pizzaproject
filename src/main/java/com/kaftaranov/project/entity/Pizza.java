@@ -30,6 +30,7 @@ public class Pizza {
     private String picture;
     @ManyToOne(optional = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
+    @ToString.Exclude
     private Pizzeria pizzeria;
     @ManyToMany
     @JoinTable(name = "pizza_ingredient",
