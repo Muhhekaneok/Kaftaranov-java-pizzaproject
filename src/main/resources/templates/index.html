@@ -28,428 +28,456 @@
 </head>
 
 <body>
-    <!-- header-start -->
-    <header>
-        <div class="header-area ">
-            <div id="sticky-header" class="main-header-area">
-                <div class="container-fluid p-0">
-                    <div class="row align-items-center no-gutters">
-                        <div class="col-xl-5 col-lg-5">
-                            <div class="main-menu  d-none d-lg-block">
-                                <nav>
-                                    <ul id="navigation">
-                                        <li><a class="active" href="index.html">home</a></li>
-                                        <li><a href="#">Menu</a></li>
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="single-blog.html">single-blog</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Pages <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="elements.html">elements</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a th:href="@{/pizzerias}">Admin</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-2">
-                            <div class="logo-img">
-                                <a href="index.html">
-                                    <img src="img/logo.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xl-5 col-lg-5 d-none d-lg-block">
-                            <div class="book_room">
-                                <div class="socail_links">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-google-plus"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="book_btn d-none d-xl-block">
-                                    <a class="#" href="#">+10 367 453 7382</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
+<!-- header-start -->
+<header>
+    <div class="header-area ">
+        <div id="sticky-header" class="main-header-area">
+            <div class="container-fluid p-0">
+                <div class="row align-items-center no-gutters">
+                    <div class="col-xl-5 col-lg-5">
+                        <div class="main-menu  d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation">
+                                    <li><a class="active" href="index.html">home</a></li>
+                                    <li><a href="#">Menu</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">blog<i class="ti-angle-down"></i></a>
+                                        <ul class="submenu">
+                                            <li><a href="blog.html">blog</a></li>
+                                            <li><a href="single-blog.html">single-blog</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Pages<i class="ti-angle-down"></i></a>
+                                        <ul class="submenu">
+                                            <li><a href="#">elements</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a th:href="@{/pizzerias}">Admin</a></li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- header-end -->
-
-    <!-- slider_area_start -->
-    <div class="slider_area">
-        <div class="slider_active owl-carousel">
-            <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
-                <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-xl-9 col-md-9 col-md-12">
-                            <div class="slider_text text-center">
-                                <div class="deal_text">
-                                    <span>Big Deal</span>
-                                </div>
-                                <h3>Boun<br>
-                                    Appetito</h3>
-                                <h4>Italian</h4>
+                    <div class="col-xl-2 col-lg-2">
+                        <div class="logo-img">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 d-none d-lg-block">
+                        <div class="book_room">
+                            <div class="socail_links">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="book_btn d-none d-xl-block">
+                                <a class="#" href="#">+12 345 678 9999</a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-			<div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
-                <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-xl-9 col-md-9 col-md-12">
-                            <div class="slider_text text-center">
-                                <div class="deal_text">
-                                    <span>Big Deal</span>
-                                </div>
-                                <h3>Boun<br>
-                                    Appetito</h3>
-                                <h4>Italian</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single_slider  d-flex align-items-center slider_bg_2 overlay">
-                <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-xl-9 col-md-9 col-md-12">
-                            <div class="slider_text text-center">
-                                <div class="deal_text">
-                                    <span>Big Deal</span>
-                                </div>
-                                <h3>Boun<br>
-                                    Appetito</h3>
-                                <h4>Italian</h4>
-                            </div>
-                        </div>
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- slider_area_end -->
+</header>
+<!-- header-end -->
 
-    <div class="best_burgers_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section_title text-center mb-80">
-                        <span>Pizza Menu</span>
-                        <h3>Best Ever Pizza</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-6 col-md-6 col-lg-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/1.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Beefy Burgers</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/2.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Burger Boys</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/3.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Burger Bizz</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-md-6 col-lg-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/4.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Crackles Burger</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/5.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Bull Burgers</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/6.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Rocket Burgers</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/7.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Smokin Burger</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/8.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Delish Burger</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="iteam_links">
-                        <a class="boxed-btn5" href="Menu.html">More Items</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- features_room_startt -->
-    <div class="Burger_President_area">
-            <div class="Burger_President_here">
-                <div class="single_Burger_President">
-                    <div class="room_thumb">
-                        <img src="img/burgers/1.png" alt="">
-                        <div class="room_heading d-flex justify-content-between align-items-center">
-                            <div class="room_heading_inner">
-                                <span>$20</span>
-                                <h3>The Burger President</h3>
-                                <p>Great way to make your business appear trust <br> and relevant.</p>
-                                <a href="#" class="boxed-btn3">Order Now</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="single_Burger_President">
-                    <div class="room_thumb">
-                        <img src="img/burgers/2.png" alt="">
-                        <div class="room_heading d-flex justify-content-between align-items-center">
-                            <div class="room_heading_inner">
-                                <span>$20</span>
-                                <h3>The Burger President</h3>
-                                <p>Great way to make your business appear trust <br> and relevant.</p>
-                                <a href="#" class="boxed-btn3">Order Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- features_room_end -->
-    <!-- about_area_start -->
-    <div class="about_area">
+<!-- slider_area_start -->
+<div class="slider_area">
+    <div class="slider_active owl-carousel">
+        <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="about_thumb2">
-                            <div class="img_1">
-                                <img src="img/about/1.png" alt="">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-9 col-md-9 col-md-12">
+                        <div class="slider_text text-center">
+                            <div class="deal_text">
+                                <span>Big Deal</span>
                             </div>
-                            <div class="img_2">
-                                <img src="img/about/2.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-5 offset-lg-1 col-md-6">
-                        <div class="about_info">
-                            <div class="section_title mb-20px">
-                                <span>About Us</span>
-                                <h3>Best Burger <br>
-                                        in your City</h3>
-                            </div>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                                alteration in some form, by injected humour, or randomised words which don't look even slightly
-                                believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                                anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
-                                Internet tend to repeat predefined chunks as necessary, making this the first true generator
-                                on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of
-                                model sentence structures, to generate</p>
-                            <div class="img_thumb">
-                                <img src="img/jessica-signature.png" alt="">
-                            </div>
+                            <h3>Boun<br>
+                                Appetito</h3>
+                            <h4>Italian</h4>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- about_area_end -->
-    <!-- video_area_start -->
-    <div class="video_area video_bg overlay">
-        <div class="video_area_inner text-center">
-            <h3>Burger <br>
-                Bachelor</h3>
-            <span>How we make delicious Burger</span>
-            <div class="video_payer">
-                <a href="https://www.youtube.com/watch?v=vLnPwxZdW4Y" class="video_btn popup-video">
-                    <i class="fa fa-play"></i>
-                </a>
+        <div class="single_slider  d-flex align-items-center slider_bg_2 overlay">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-9 col-md-9 col-md-12">
+                        <div class="slider_text text-center">
+                            <div class="deal_text">
+                                <span>Big Deal</span>
+                            </div>
+                            <h3>Boun<br>
+                                Appetito</h3>
+                            <h4>Italian</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- video_area_end -->
+</div>
+<!-- slider_area_end -->
 
-    <!-- testimonial_area_start  -->
-        <div class="testimonial_area ">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                                <div class="section_title mb-60 text-center">
-                                        <span>Testimonials</span>
-                                        <h3>Happy Customers</h3>
+<div class="best_burgers_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section_title text-center mb-80">
+                    <span>Pizza Menu</span>
+                    <h3>Best Ever Pizza</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-6 col-md-6 col-lg-6">
+                <div class="single_delicious d-flex align-items-center">
+                    <div class="thumb">
+                        <img src="img/pizza/Aegean lamb.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Aegean lamb</h3>
+                        <p>House cooked lamb shoulder roasted in Mediterranean spices, tomato, green peppers, red onion,
+                            feta, pomegranate, garlic EVOO base, topped with tzatziki yoghurt</p>
+                        <span>$14.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="single_delicious d-flex align-items-center">
+                    <div class="thumb">
+                        <img src="img/pizza/Aubergine parmigana.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Aubergine parmigana</h3>
+                        <p>Grilled marinated aubergine, roasted red peppers, red onion, garlic oil, fresh basil,
+                            on a tomato base topped with shaved parmesan cheese</p>
+                        <span>$12.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="single_delicious d-flex align-items-center">
+                    <div class="thumb">
+                        <img src="img/pizza/Bresaola rucola.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Bresaola rucola</h3>
+                        <p>Beef bresaola, cherry tomato, red onion, bufala mozzarella on a truffle cream sauce base,
+                            topped with balsamic fig reduction, rocket leaf and shaved parmesan.</p>
+                        <span>$13.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-md-6 col-lg-6">
+                <div class="single_delicious d-flex align-items-center">
+                    <div class="thumb">
+                        <img src="img/pizza/Carne mista.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Carne mista</h3>
+                        <p>Roast lamb, bresaola, Italian beef sausage, BBQ chicken, beef pepperoni,
+                            drizzled with BBQ sauce base</p>
+                        <span>$14.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="single_delicious d-flex align-items-center">
+                    <div class="thumb">
+                        <img src="img/pizza/Florentine ricotta.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Florentine ricotta</h3>
+                        <p>Baby spinach and ricotta sauce base, kalamata olives, red onion,
+                            roasted cherry tomatoes, toasted pine nuts, bufala mozzarella,
+                            topped with shaved parmesan</p>
+                        <span>$12.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="single_delicious d-flex align-items-center">
+                    <div class="thumb">
+                        <img src="img/pizza/Italian sausage.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Italian sausage</h3>
+                        <p>Spicy beef sausage, green peppers, red onion, fior di latte, cherry tomato,
+                            chilli, garlic, harissa hot sauce, tomato base</p>
+                        <span>$11.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="single_delicious d-flex align-items-center">
+                    <div class="thumb">
+                        <img src="img/pizza/Superbiotica.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Superbiotica</h3>
+                        <p>Grilled aubergine, marinated artichokes, baby spinach, roasted peppers, mushrooms,
+                            sun dried tomatoes fior di latte, on a tomato base, topped with pesto gremolata</p>
+                        <span>$11.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="single_delicious d-flex align-items-center">
+                    <div class="thumb">
+                        <img src="img/pizza/Truffle fungo.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Truffle fungo</h3>
+                        <p>Roasted mushrooms, caramelised onion, sun dried tomato, fior di latte mozzarella, on a white
+                            truffle cream sauce base topped with wild rocket & truffle aioli</p>
+                        <span>$11.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="iteam_links">
+                    <a class="boxed-btn5" href="Menu.html">More Items</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- features_room_startt -->
+<div class="Burger_President_area">
+    <div class="Burger_President_here">
+        <div class="single_Burger_President">
+            <div class="room_thumb">
+                <img src="img/pizzas/1.png" alt="">
+                <div class="room_heading d-flex justify-content-between align-items-center">
+                    <div class="room_heading_inner">
+                        <span>$13.99</span>
+                        <h3>Polla Bresaola</h3>
+                        <p>House cooked chicken breast fillets, thinly sliced<br>bresaola, red onion,
+                            fresh tomato on a tomato base, <br> garnished with wild rocket and pesto gremolata</p>
+                        <a href="#" class="boxed-btn3">Order Now</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="single_Burger_President">
+            <div class="room_thumb">
+                <img src="img/pizzas/2.png" alt="">
+                <div class="room_heading d-flex justify-content-between align-items-center">
+                    <div class="room_heading_inner">
+                        <span>$15.99</span>
+                        <h3>Za’atar spiced lambed mix</h3>
+                        <p>House cooked Za’atar spiced lamb, caramelised onion, <br> chilli, bufala mozzarella, beetroot
+                            relish,
+                            <br>Feta PDO, rocket, on a garlic EVOO base, with harissa hot sauce. Spicy Option</p>
+                        <a href="#" class="boxed-btn3">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- features_room_end -->
+<!-- about_area_start -->
+<div class="about_area">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="about_thumb2">
+                    <div class="img_1">
+                        <img src="img/about/1.png" alt="">
+                    </div>
+                    <div class="img_2">
+                        <img src="img/about/2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 offset-lg-1 col-md-6">
+                <div class="about_info">
+                    <div class="section_title mb-20px">
+                        <span>About Us</span>
+                        <h3>Our pizza is <br> healthier than your <br> fitness instructor</h3>
+                    </div>
+                    <p>All our pizzas are a healthier alternative to the current <br> market leaders
+                        as well as being available in any of the following variations
+                        <br> – vegetarian, gluten free, halal and vegan.
+                        <br> Our ancient grain flour dough is healthier and leaves you feeling lighter.
+                        <br> It’s time to Go Nudo! Healthier alternative to greasy pizza delivered to your door.
+                        <br> Check out our menu available in Deliveroo and Just Eat</p>
+                    <div class="img_thumb">
+                        <img src="img/jessica-signature.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- about_area_end -->
+<!-- video_area_start -->
+<div class="video_area video_bg overlay">
+    <div class="video_area_inner text-center">
+        <h3>Edible <br>
+            Art</h3>
+        <span>How we make delicious and healthy pizza</span>
+        <div class="video_payer">
+            <a href="https://www.youtube.com/watch?v=yPYZpwSpKmA" class="video_btn popup-video">
+                <i class="fa fa-play"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- video_area_end -->
+
+<!-- testimonial_area_start  -->
+<div class="testimonial_area ">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title mb-60 text-center">
+                    <span>Testimonials</span>
+                    <h3>Happy Customers</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="testmonial_active owl-carousel">
+                    <div class="single_carousel">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="single_testmonial text-center">
+                                    <p>This pizza is much tastier than the ones I make in
+                                        <br> Krusty Krab Pizzeria! And now those pizza for you and meeeeee</p>
+                                    <div class="testmonial_author">
+                                        <div class="thumb">
+                                            <img src="img/testmonial/SpongeBob.png" alt="">
+                                        </div>
+                                        <h4>Sponge Bob</h4>
+                                        <div class="stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half"></i>
+                                        </div>
                                     </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="testmonial_active owl-carousel">
-                                <div class="single_carousel">
-                                    <div class="row justify-content-center">
-                                        <div class="col-lg-8">
-                                            <div class="single_testmonial text-center">
-                                                <p>“Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
-                                                    sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec
-                                                    sed
-                                                    neque.</p>
-                                                <div class="testmonial_author">
-                                                    <div class="thumb">
-                                                        <img src="img/testmonial/1.png" alt="">
-                                                    </div>
-                                                    <h4>Kristiana Chouhan</h4>
-                                                    <div class="stars">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
+                    <div class="single_carousel">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="single_testmonial text-center">
+                                    <p>“Three things are infinite: eating pizza, the universe and human stupidity;
+                                        <br> and I'm not sure about the universe</p>
+                                    <div class="testmonial_author">
+                                        <div class="thumb">
+                                            <img src="img/testmonial/Einstein.png" alt="">
+                                        </div>
+                                        <h4>Einstein</h4>
+                                        <div class="stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half"></i>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="single_carousel">
-                                    <div class="row justify-content-center">
-                                        <div class="col-lg-8">
-                                            <div class="single_testmonial text-center">
-                                                <p>“Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
-                                                    sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec
-                                                    sed
-                                                    neque.</p>
-                                                <div class="testmonial_author">
-                                                    <div class="thumb">
-                                                        <img src="img/testmonial/2.png" alt="">
-                                                    </div>
-                                                    <h4>Arafath Hossain</h4>
-                                                    <div class="stars">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_carousel">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="single_testmonial text-center">
+                                    <p>“01010100 01101000 01100101 00100000 01100010 01100101 01110011</p>
+                                    <div class="testmonial_author">
+                                        <div class="thumb">
+                                            <img src="img/testmonial/Robocop.png" alt="">
+                                        </div>
+                                        <br>
+                                        <h4>Robocop</h4>
+                                        <div class="stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half"></i>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="single_carousel">
-                                    <div class="row justify-content-center">
-                                        <div class="col-lg-8">
-                                            <div class="single_testmonial text-center">
-                                                <p>“Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
-                                                    sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec
-                                                    sed
-                                                    neque.</p>
-                                                <div class="testmonial_author">
-                                                    <div class="thumb">
-                                                        <img src="img/testmonial/3.png" alt="">
-                                                    </div>
-                                                    <h4>A.H Shemanto</h4>
-                                                    <div class="stars">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_carousel">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="single_testmonial text-center">
+                                    <p>“The best pizza chef is my daddy. The best pizza is Aubergine parmigana</p>
+                                    <div class="testmonial_author">
+                                        <div class="thumb">
+                                            <img src="img/testmonial/Emilken.png" alt="">
+                                        </div>
+                                        <h4>Emilken</h4>
+                                        <div class="stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_carousel">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="single_testmonial text-center">
+                                    <p>Have you ever eat Bresaola rucola? If you not then you should to do it.
+                                        <br>Becouse my daddy bake it</p>
+                                    <div class="testmonial_author">
+                                        <div class="thumb">
+                                            <img src="img/testmonial/Polishka.png" alt="">
+                                        </div>
+                                        <h4>Polishka</h4>
+                                        <div class="stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -457,16 +485,19 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
-    <!-- testimonial_area_ned  -->
+    </div>
+</div>
+<!-- testimonial_area_ned  -->
 
-    <!-- instragram_area_start -->
-    <div class="instragram_area">
+<!-- instragram_area_start -->
+<div class="instragram_area">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6">
                 <div class="single_instagram">
-                    <img src="img/instragram/1.png" alt="">
+                    <img src="img/instragram/salad1.png" alt="">
                     <div class="ovrelay">
                         <a href="#">
                             <i class="fa fa-instagram"></i>
@@ -476,7 +507,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="single_instagram">
-                    <img src="img/instragram/2.png" alt="">
+                    <img src="img/instragram/salad2.png" alt="">
                     <div class="ovrelay">
                         <a href="#">
                             <i class="fa fa-instagram"></i>
@@ -486,7 +517,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="single_instagram">
-                    <img src="img/instragram/3.png" alt="">
+                    <img src="img/instragram/salad3.png" alt="">
                     <div class="ovrelay">
                         <a href="#">
                             <i class="fa fa-instagram"></i>
@@ -496,7 +527,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="single_instagram">
-                    <img src="img/instragram/4.png" alt="">
+                    <img src="img/instragram/salad4.png" alt="">
                     <div class="ovrelay">
                         <a href="#">
                             <i class="fa fa-instagram"></i>
@@ -506,126 +537,138 @@
             </div>
         </div>
     </div>
+</div>
+<!-- instragram_area_end -->
+
+<footer class="footer">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="footer_widget text-center ">
+                        <h3 class="footer_title pos_margin">
+                            Brighton
+                        </h3>
+                        <p>65-67 Church Road, <br>
+                            <a href="http://www.fattoamanopizza.com">http://www.fattoamanopizza.com</a></p>
+                        <a class="number">+44 127 332 5400</a>
+
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="footer_widget text-center ">
+                        <h3 class="footer_title pos_margin">
+                            London
+                        </h3>
+                        <p>245 Eversholt St, <br>
+                            <a href="https://lostsoulspizza.com">https://lostsoulspizza.com</a></p>
+                        <a class="number">+44 207 388 2101</a>
+
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="footer_widget text-center ">
+                        <h3 class="footer_title pos_margin">
+                            London
+                        </h3>
+                        <p>70 High Rd, East Finchley <br>
+                            <a href="https://nudopizza.co.uk">https://nudopizza.co.uk</a></p>
+                        <a class="number">+44 208 194 4415</a>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-12 col-lg-4">
+                    <p class="do_it_well">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                            Stay Connected
+                        </h3>
+                        <form action="#" class="newsletter_form">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit">Sign Up</button>
+                        </form>
+                        <p class="newsletter_text">Stay connect with us to get exclusive offer!</p>
+                    </div>
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="socail_links text-center">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-twitter-alt"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- instragram_area_end -->
-
-    <footer class="footer">
-            <div class="footer_top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-4 col-md-6 col-lg-4">
-                            <div class="footer_widget text-center ">
-                                <h3 class="footer_title pos_margin">
-                                        New York
-                                </h3>
-                                <p>5th flora, 700/D kings road, <br>
-                                        green lane New York-1782 <br>
-                                        <a href="#">info@burger.com</a></p>
-                                <a class="number" href="#">+10 378 483 6782</a>
-
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6 col-lg-4">
-                            <div class="footer_widget text-center ">
-                                <h3 class="footer_title pos_margin">
-                                    California
-                                </h3>
-                                <p>5th flora, 700/D kings road, <br>
-                                        green lane New York-1782 <br>
-                                        <a href="#">info@burger.com</a></p>
-                                <a class="number" href="#">+10 378 483 6782</a>
-
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-12 col-lg-4">
-                                <div class="footer_widget">
-                                        <h3 class="footer_title">
-                                                Stay Connected
-                                        </h3>
-                                        <form action="#" class="newsletter_form">
-                                            <input type="text" placeholder="Enter your mail">
-                                            <button type="submit">Sign Up</button>
-                                        </form>
-                                        <p class="newsletter_text">Stay connect with us to get exclusive offer!</p>
-                                    </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-4">
-                            <div class="socail_links text-center">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <i class="ti-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="ti-twitter-alt"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="ti-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-google-plus"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                        </div>
-                    </div>
+    <div class="copy-right_text">
+        <div class="container">
+            <div class="footer_border"></div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <p class="copy_right text-center">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                        All rights reserved | This template is made with
+                        <i class="fa fa-heart-o" aria-hidden="true"></i> by
+                        <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
                 </div>
             </div>
-            <div class="copy-right_text">
-                <div class="container">
-                    <div class="footer_border"></div>
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <p class="copy_right text-center">
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
-                                <i class="fa fa-heart-o" aria-hidden="true"></i> by
-                                <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        </div>
+    </div>
+</footer>
 
 
-    <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins.js"></script>
+<!-- JS here -->
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="js/vendor/jquery-1.12.4.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/ajax-form.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/scrollIt.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/nice-select.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/plugins.js"></script>
 
-    <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
+<!--contact js-->
+<script src="js/contact.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.form.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/mail-script.js"></script>
 
-    <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 
