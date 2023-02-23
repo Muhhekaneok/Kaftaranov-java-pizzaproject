@@ -299,6 +299,18 @@ insert into pizza_ingredient (pizza_id, ingredient_id) values ('8731bf22-1a3e-43
 insert into pizza_ingredient (pizza_id, ingredient_id) values ('8731bf22-1a3e-43bd-acb5-e6449c3fe384', 'a64ac330-53d2-4f39-9826-e7dbe2f16767');
 insert into pizza_ingredient (pizza_id, ingredient_id) values ('8731bf22-1a3e-43bd-acb5-e6449c3fe384', 'af6b567b-28c0-4228-810d-a2e6c591d663');
 
+
+insert into role (id, name) values ('a62a11c6-d2ca-48a1-968c-04ff68abce8e', 'role_admin');
+insert into role (id, name) values ('bea64bfc-fa81-4650-83a2-67d88455fd69', 'role_user');
+
+insert into user (id, login, name, password) values ('fab092ee-9b1a-4913-9de8-d7beb9fb864b', 'admin', 'Tom', '$2a$10$dzV0JniePnLxhL8BT/rP8eVO5j7ggGEQI5NgFjaF0mPhYwpPGwBDq');
+insert into user (id, login, name, password) values ('c15edd0e-0eb7-4982-ad4b-f05ea0ef98cd', 'user1', 'Jerry', '$2a$10$fa4BN/0ehzn9hnXOPm5E3e7DC9wbk.KEl/X5qZNZT.X3e89NXWTZi');
+insert into user (id, login, name, password) values ('0813921d-310f-4811-aeb3-4076a84ae417', 'user2', 'Spike', '$2a$10$fa4BN/0ehzn9hnXOPm5E3e7DC9wbk.KEl/X5qZNZT.X3e89NXWTZi');
+
+insert into user_role (user_id, role_id) values ('fab092ee-9b1a-4913-9de8-d7beb9fb864b', 'a62a11c6-d2ca-48a1-968c-04ff68abce8e');
+insert into user_role (user_id, role_id) values ('c15edd0e-0eb7-4982-ad4b-f05ea0ef98cd', 'bea64bfc-fa81-4650-83a2-67d88455fd69');
+insert into user_role (user_id, role_id) values ('0813921d-310f-4811-aeb3-4076a84ae417', 'bea64bfc-fa81-4650-83a2-67d88455fd69');
+
 -- customer
 --insert into customer (id, name, phoneNumber, review, pizzeria_id, pizza_id)
 --    values ('7053251c-d962-43f2-907a-295efc06b4e3', 'Joe Biden', '+1 111 111 11 11', 'It was one of the best pizzas in my life.!', 'cd6a9cff-9e83-4438-aaea-81b98c79e9c7', '116e65ed-16a4-4024-9bbf-dfb1803284c5');

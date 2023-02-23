@@ -34,15 +34,17 @@ public class PizzaService {
     }
 
     public void savePizza(MultipartFile file, Pizza pizza) throws IOException {
-        String filename = file.getOriginalFilename();
-        pizza.setPicture(filename);
-        Path path = Paths.get(imagesDirectory + "\\" + filename);
-        Files.copy(file.getInputStream(), path, StandardCopyOption.REPLACE_EXISTING);
+        if (!file.isEmpty()) {
+            String filename = file.getOriginalFilename();
+            pizza.setPicture(filename);
+            Path path = Paths.get(imagesDirectory + "\\" + filename);
+            Files.copy(file.getInputStream(), path, StandardCopyOption.REPLACE_EXISTING);
+        }
         pizzaRepository.save(pizza);
     }
 
     public Pizza getPizzaById(String id) {
-        return pizzaRepository.findById(id).get();
+        return pizzaRepository.findById(id).orElse(null);
     }
 
     public void deletePizzaById(String id) {

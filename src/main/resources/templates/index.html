@@ -1,6 +1,8 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security5">
+<!--      xmlns:sec="http://www.w3.org/1999/xhtml">-->
 
 <head>
     <meta charset="utf-8">
@@ -52,7 +54,9 @@
                                             <li><a href="#">elements</a></li>
                                         </ul>
                                     </li>
-                                    <li><a th:href="@{/pizzerias}">Admin</a></li>
+                                    <li><a th:href="@{/login}" sec:authorize="isAnonymous()">Login</a></li>
+                                    <li><a th:href="@{/pizzerias}" sec:authorize="hasRole('role_admin')">Admin</a></li>
+                                    <li><a th:href="@{/logout}" sec:authorize="isAuthenticated()">Logout</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -363,7 +367,7 @@
             <div class="col-xl-12">
                 <div class="section_title mb-60 text-center">
                     <span>Testimonials</span>
-                    <h3>Happy Customers</h3>
+                    <h3>Customers reviews</h3>
                 </div>
             </div>
         </div>

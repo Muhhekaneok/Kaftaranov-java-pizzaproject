@@ -13,6 +13,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
+import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -51,6 +53,15 @@ public class PizzaController {
             model.addAttribute("pizzerias", pizzeriaService.getAllPizzerias());
             return "pizza";
         }
+        // файл не выбран и пиццу в базу данных еще не добавляли
+        Pizza currentPizza = pizzaService.getPizzaById(pizza.getId());
+        if (file.isEmpty() && currentPizza == null) {
+            bindingResult.addError(new FieldError("pizza", "image", "file doesn't load"));
+            model.addAttribute("pizzerias", pizzeriaService.getAllPizzerias());
+            return "pizza";
+        }
+        if (currentPizza != null)
+            pizza.setPicture(currentPizza.getPicture());
         pizzaService.savePizza(file, pizza);
         return "redirect:/pizzas";
     }

@@ -4,15 +4,14 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.util.List;
 
 @Entity
-@Data
+@Setter
+@Getter
 @NoArgsConstructor
 public class Pizzeria {
     @Id
@@ -36,14 +35,5 @@ public class Pizzeria {
 //    @Max(value = 5, message = "Rating cannot be more than 5")
     private int rating;
     @OneToMany(mappedBy = "pizzeria")
-//    todo: была ошибка ...Could not write JSON: Infinite recursion (StackOverflowError)] with root cause
-//    why??? Ломал голову весь день. Че за херня? Подсказка - линк ниже
-//    https://stackoverflow.com/questions/47693110/could-not-write-json-infinite-recursion-stackoverflowerror-nested-exception
-//    судя по комментариям, конфликт при совместном использовании lombok, либо какого-то Statemaster и Districtmaster,
-//    т.к. присходит бесконечная рекурсия. Cоответственно, при выполнении запроса в адрескной строке
-//    http://localhost:8080/api/pizzerias похоже выпадал бесконечный список самой первой пицерии.
-//    В итоге, помогла аннтоация @JsonIgnore
-    @JsonIgnore
-    @ToString.Exclude
     private List<Pizza> pizzas;
 }
