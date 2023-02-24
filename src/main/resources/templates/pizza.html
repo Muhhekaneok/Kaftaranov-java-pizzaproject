@@ -29,8 +29,8 @@
   </div>
   <div class="mb-3">
     <label for="image" class="form-label">Picture</label>
-    <input class="form-control" type="file" id="image" name="image" th:classappend="${#fields.hasErrors('image')} ? is-invalid : ''">
-    <div id="validationInputImage" class="invalid-feedback" th:if="${#fields.hasErrors('image')}" th:errors="*{picture}"></div>
+    <input class="form-control" type="file" id="image" name="image" th:classappend="${#fields.hasErrors('picture')} ? is-invalid : ''">
+    <div id="validationInputImage" class="invalid-feedback" th:if="${#fields.hasErrors('picture')}" th:errors="*{picture}"></div>
   </div>
   <div class="mb-3">
     <label for="dataBaseImage" class="form-label">Current picture</label>
