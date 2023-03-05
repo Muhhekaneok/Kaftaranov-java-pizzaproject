@@ -33,7 +33,7 @@ public class SecurityConfiguration {
                 .anyRequest().fullyAuthenticated();
         http.formLogin()
                 .loginPage("/login")
-//                .defaultSuccessUrl("/")
+                .defaultSuccessUrl("/")
                 .permitAll();
         http.logout()
                 .invalidateHttpSession(true)

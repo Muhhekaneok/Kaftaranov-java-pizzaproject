@@ -29,9 +29,9 @@ public class UserService implements UserDetailsService {
     }
 
     public void saveUser(User user) {
-        Role role = roleRepository.findByName("role_user");
+        Role role = roleRepository.findByName("ROLE_USER");
         if (role == null) {
-            role = roleRepository.save(new Role("role_user"));
+            role = roleRepository.save(new Role("ROLE_USER"));
         }
         user.setRoles(List.of(role));
         user.setPassword(passwordEncoder.encode(user.getPassword()));
@@ -40,9 +40,6 @@ public class UserService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-//        System.out.println("admin: " + passwordEncoder.encode("admin"));
-//        System.out.println("user: " + passwordEncoder.encode("user"));
-
         User user = userRepository.findByLogin(username);
         if (user != null) {
             return new org.springframework.security.core.userdetails.User(

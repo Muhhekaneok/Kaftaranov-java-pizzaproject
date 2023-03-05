@@ -300,8 +300,8 @@ insert into pizza_ingredient (pizza_id, ingredient_id) values ('8731bf22-1a3e-43
 insert into pizza_ingredient (pizza_id, ingredient_id) values ('8731bf22-1a3e-43bd-acb5-e6449c3fe384', 'af6b567b-28c0-4228-810d-a2e6c591d663');
 
 
-insert into role (id, name) values ('a62a11c6-d2ca-48a1-968c-04ff68abce8e', 'role_admin');
-insert into role (id, name) values ('bea64bfc-fa81-4650-83a2-67d88455fd69', 'role_user');
+insert into role (id, name) values ('a62a11c6-d2ca-48a1-968c-04ff68abce8e', 'ROLE_ADMIN');
+insert into role (id, name) values ('bea64bfc-fa81-4650-83a2-67d88455fd69', 'ROLE_USER');
 
 insert into user (id, login, name, password) values ('fab092ee-9b1a-4913-9de8-d7beb9fb864b', 'admin', 'Tom', '$2a$10$dzV0JniePnLxhL8BT/rP8eVO5j7ggGEQI5NgFjaF0mPhYwpPGwBDq');
 insert into user (id, login, name, password) values ('c15edd0e-0eb7-4982-ad4b-f05ea0ef98cd', 'user1', 'Jerry', '$2a$10$fa4BN/0ehzn9hnXOPm5E3e7DC9wbk.KEl/X5qZNZT.X3e89NXWTZi');

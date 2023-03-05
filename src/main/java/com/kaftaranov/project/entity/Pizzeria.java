@@ -2,6 +2,8 @@ package com.kaftaranov.project.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -31,8 +33,8 @@ public class Pizzeria {
     private boolean aroundTheClock;
     @Column(name = "is_card_payment")
     private boolean cardPayment;
-//    @Min(value = 1, message = "Rating cannot be less than 1")
-//    @Max(value = 5, message = "Rating cannot be more than 5")
+    @Min(value = 1, message = "Rating cannot be less than 1")
+    @Max(value = 5, message = "Rating cannot be more than 5")
     private int rating;
     @OneToMany(mappedBy = "pizzeria")
     private List<Pizza> pizzas;

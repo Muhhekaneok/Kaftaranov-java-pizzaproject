@@ -31,6 +31,11 @@ public class MainController {
         this.userService = userService;
     }
 
+    @GetMapping("/main")
+    public String main() {
+        return "redirect:/";
+    }
+
     @GetMapping("/login")
     public String admin() {
         return "login";
@@ -54,9 +59,9 @@ public class MainController {
 
         String username = user.getLogin();
         String password = user.getPassword();
-        Role role = roleService.findByName("role_user");
+        Role role = roleService.findByName("ROLE_USER");
         if (role == null) {
-            role = roleService.save(new Role("role_user"));
+            role = roleService.save(new Role("ROLE_USER"));
         }
         userService.saveUser(user);
         SecurityContext securityContext = SecurityContextHolder.getContext();
@@ -66,6 +71,6 @@ public class MainController {
                 List.of(new SimpleGrantedAuthority(role.getName()))
         );
         securityContext.setAuthentication(auth);
-        return "redirect:/pizzerias";
+        return "redirect:/";
     }
 }
